@@ -10,7 +10,7 @@
         </div>
         <div class="prose max-w-none prose-sky prose-headings:font-medium">
             <x-markdown theme="github-dark">
-                {{ $post->body }}
+                {!! $post->body !!}
             </x-markdown>
         </div>
         <div>
