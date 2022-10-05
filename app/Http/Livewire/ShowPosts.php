@@ -12,7 +12,7 @@ class ShowPosts extends Component
         return view('livewire.show-posts', [
             'posts' => Post::where('published', 1)
                 ->orderBy('published_at', 'DESC')
-                ->paginate(10)
+                ->paginate(10),
         ]);
     }
 }
